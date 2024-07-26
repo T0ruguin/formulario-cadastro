@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Usuário</h1>
+        <form id="cadastroForm">
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="dataNascimento">Data de Nascimento:</label>
+                <input type="date" id="dataNascimento" name="dataNascimento" required>
+            </div>
+            <div class="form-group">
+                <label>Sexo:</label>
+                <div class="inline-group">
+                    <input type="radio" id="masculino" name="sexo" value="masculino" required>
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="feminino" name="sexo" value="feminino" required>
+                    <label for="feminino">Feminino</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Estado Civil:</label>
+                <select id="estadoCivil" name="estadoCivil" required>
+                    <option value="">Selecione</option>
+                    <option value="solteiro">Solteiro(a)</option>
+                    <option value="casado">Casado(a)</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Áreas de Interesse:</label>
+                <div class="checkbox-group">
+                    <div>
+                        <input type="checkbox" id="analise" name="interesse" value="analise">
+                        <label for="analise">Análise</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="banco" name="interesse" value="banco">
+                        <label for="banco">Banco de dados</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="desenvolvimento" name="interesse" value="desenvolvimento">
+                        <label for="desenvolvimento">Desenvolvimento</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="engenharia" name="interesse" value="engenharia">
+                        <label for="engenharia">Engenharia de software</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="redes" name="interesse" value="redes">
+                        <label for="redes">Redes de computadores</label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
